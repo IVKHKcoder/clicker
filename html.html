@@ -4,48 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<script src="script.js"></script>
 </head>
 <body>
-	<div id="current_date_time_block2"></div>
-
-<script type="text/javascript">
-    
-    /* каждую секунду получаем текущую дату и время */
-    /* и вставляем значение в блок с id "current_date_time_block2" */
-    setInterval(function () {
-        document.getElementById('current_date_time_block2').innerHTML = date_time();
-    }, 1000);
-</script>
-
-</script>
-
-<script src="script.js"></script>
 	<div class="main">
 		<div class="gamewin">
 			<div class="text">
 				
 				Очки: <span id="value"></span>
 				Ваши дома: <span id="doma"></span>
+				Ваши маркеты: <span id="bussines"></span>
 			</div>
 			<button class="button" onclick="prss();"> Нажми на меня </button>
 		</div>
 		<button class="shop" onclick="buyhouse();">Магазин</button>
+		<button onclick="bussines();">купить магазин</button>
 	</div>
-
-<select id="selectvalue">
-
-<option id="5">5</option>
-
-<option>10</option>
-
-<option>15</option>
-
-<option>20</option>
-
-<option>25</option>
-
-</select>
-
 
 	
 </body>
